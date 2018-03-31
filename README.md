@@ -2,6 +2,8 @@ it is not easy
 ---
 ![well](well.jpg)
 
+this is not really a tutorial, just trying to relate very basic language constructs to programming,
+so it will feel a bit like the picture above, but fear not, after grinding for a while you will draw a panda.
 
 ---
 ## if
