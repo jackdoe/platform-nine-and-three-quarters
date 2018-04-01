@@ -132,7 +132,7 @@ The point I am trying to make is that it is very easy to get scared when you loo
 
 whoooaa, what is going on, so many symbols, there is `! () { } ; and _` so you will have to remember what they mean.
 
-**!** means `not` literally `!raining` means `not raining`, `()` are used to
+`!` means `not` literally `!raining` means `not raining`, `()` are used to
 group the if condition, and `{}` are defining the code block, `;` is
 saying somewhat equivalent to "end of sentence"
 
