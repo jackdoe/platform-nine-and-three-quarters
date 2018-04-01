@@ -24,11 +24,9 @@ The four things you have to master are:
 This now sounds very abstract and useless, but by the end of the
 course you will be able to write some useful programs.
 
-* 
-
+* fun math game for Bella
 * trip budget planner
-* 
-
+* tick tack toe game
 * app that keeps track of how long Bella plays on the iPad
 * dog walk calendar
 * food tracking app
