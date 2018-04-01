@@ -144,6 +144,56 @@ Anyway dont get too scared of symbols, we will get back to them later
 Keep in mind that syntax is absolutely irrelevant the point is in the `condition` and `code block`
 
 
+
+### conditions
+
+Lets expand on the concept of `condition` and examine the following piece of code:
+
+    if (water temperature == 100)
+        remove from stove
+        pour in cup
+        put tea in
+    end
+
+in this case the condition is `(water temperature == 100)` and if this statement is `true` then the code block will be executed
+
+    if true
+       code
+    else
+       code
+    end
+
+This is very important and now it seems super abstract, but I will say
+again, *all* programs can be reduced to a `if` and `goto`, goto means
+*go to specific part in the program*, so if you understand the `if`
+(called `branching`), you are half there.
+
+You are probably annoyed by now, using such trivial examples and you
+absolutely do not belive that this is how programs are made, but they
+are.
+
+The whole point of the `condition` is that the computer will
+**evaluate** it to check if it results in `true` or `false` for using
+our previous example, lets say the water temperature at the moment is
+`57` degrees, so the evaluation of `(water temperature == 100)` is **false**.
+
+Lets say we run our programs few minutes later, and at this point the water temperature is 100 degrees, then `(water temperature == 100)` is **true**.
+
+The code is absolutely the same, but somehow it works in a different way.
+A problem being simply set of instructions, this is how we change the
+**flow** of the program, to behave differently when the **state**
+changes, in our case the state is the temperature of the water.
+
+We can have millions of lines of code in `if (water temperature ==
+100) .... end`, but unless the water temperature reaches 100 degrees
+it is completely irrelevant and never executed.
+
+
+
+### code block
+
+code block is just a collection of statements that are executed one after the other, nothing fancy.
+
 ## loops
 
     you can not play outside, until you finish your homework
