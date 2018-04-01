@@ -94,6 +94,54 @@ write the examples in the format:
 
 send me the examples to my email (jack@sofialondonmoskva.com)
 
+there is a lot of syntax involved here, so lets break it down
+
+    if [something that is either true or false]
+        code block executed if it is true
+        the code block can be multiple lines
+    else
+        code executed if it is false
+        this code block can also be multiple lines
+    end
+
+there are many ways to declare a code block some examples:
+
+
+    if (not raining) {
+       go to sea
+    } else {
+       stay at home
+    }
+
+or
+
+    if not raining:
+       go to sea
+    else:
+       stay at home
+
+And there are many more, so when you read code you have to learn to just look for the `code blocks` doesnt matter if the language you are reading has brackets or spaces or semicolons or square brackets etc.
+
+The point I am trying to make is that it is very easy to get scared when you look at any example code because it is full of weird symbols, for example:
+
+    if (!raining) {
+       go_to_sea();
+    } else {
+       stay_at_home();
+    }
+
+whoooaa, what is going on, so many symbols, there is `! () { } ; and _` so you will have to remember what they mean.
+
+**!** means `not` literally `!raining` means `not raining`, `()` are used to
+group the if condition, and `{}` are defining the code block, `;` is
+saying somewhat equivalent to "end of sentence"
+
+Anyway dont get too scared of symbols, we will get back to them later
+
+Keep in mind that syntax is absolutely irrelevant the point is in the `condition` and `code block`
+
+
+
 ## loops
 
     you can not play outside, until you finish your homework
