@@ -2,10 +2,66 @@ it is not easy
 ---
 ![well](well.jpg)
 
-this is not really a tutorial, just trying to relate very basic language constructs to programming,
+I am writing this for my wife Gergana and I am trying to make it
+useful for her, so I am perfectly fine if you (who is reading this tutorial and
+is not Gergana) do not like it.
+
+This is not really a tutorial, just trying to relate very basic language constructs to programming,
 so it will feel a bit like the picture above, but fear not, after grinding for a while you will draw a panda.
 
+I promise you if you master only 4 things you will be able to climb the learning curve.
+
+Keep in mind that the learning curve is not really a curve, but rather
+a learning staircase, once you learn a concept it does not get easy right away, but after quite some tinkering.
+
+The four things you have to master are:
+
+* understand the meaning of the word 'if'
+* repetition (or looping)
+* variables
+* goto
+
+This now sounds very abstract and useless, but by the end of the
+course you will be able to write some useful programs.
+
+* 
+
+* trip budget planner
+* 
+
+* app that keeps track of how long Bella plays on the iPad
+* dog walk calendar
+* food tracking app
+
+
+At first we will start by understanding the very basic concepts, and
+then you will have to memorize some syntax, which will seem like magic
+spells, and this is fine.
+
+Our goal is to replace most of the magic incantations with physics
+understanding, in general the way new concepts will be introduced are
+magic first - physics later.
+
+For example when Bella asks me why do soap bubbles have colorful
+rings, I simply tell her: because of light, when you grow up you will
+have to spend some time figuring it out; instead of trying to explain
+quantum interference.
+
+
+The most important thing is to not give up and understand that it is
+simply difficult and it is difficult to anybody who is just starting.
+
+It might also help you to translate this text to Dutch, I think this
+will help you to memorize the incantations better.
+
+There are hundreds of books, each is trying to teach from different
+approach, but I belive this is the best way for you, so sit back,
+relax and try to not close the laptop in despair.
+
 ---
+
+# foundation
+
 ## if
 
     If you eat your meal, you can have icecream for desert.
@@ -13,11 +69,32 @@ so it will feel a bit like the picture above, but fear not, after grinding for a
 doesnt seem difficult, and it translates to something like
 
 
-    if (daughter eats her meal)
+    if (Bella eats her meal)
         she can have icecream
     else
         no icecream
     end
+
+
+another example:
+
+    If it is not raining, we will go to the sea
+
+code:
+
+    if (not raining)
+        go to sea
+    else
+        stay at home
+    end
+
+read it again **until** you can come up with at least 5 examples,
+write the examples in the format:
+
+    sentence in english
+    code
+
+
 
 ## loops
 
@@ -36,6 +113,15 @@ or
         no play
     end
     let her play outside
+
+
+another example is right in the previous section:
+    read it again **until** you can come up with at least 5 examples,
+
+    until (you can think of 5 examples)
+        read the #if section
+    end
+    read the next section
 
 
 ## infinite loops
@@ -197,4 +283,46 @@ if you can get past this point, you can be called a programmer
 
 ## maps
 
+## messages
+
 ## objects
+
+## input/output
+
+## build our first useful program
+
+## html
+
+## javascript
+
+## git
+
+## build our second app
+
+## machine code
+
+## harvard vs von neumann
+
+## c
+
+## virtual machines
+
+## http
+
+## make js + html communicate with c web server
+
+## sort
+
+## search
+
+## hashing
+
+## make our first database
+
+## mysql
+
+## make our first complex webapp
+
+## distributed computing
+
+## next steps
