@@ -92,7 +92,7 @@ write the examples in the format:
     sentence in english
     code
 
-
+send me the examples to my email (jack@sofialondonmoskva.com)
 
 ## loops
 
@@ -114,6 +114,7 @@ or
 
 
 another example is right in the previous section:
+
     read it again **until** you can come up with at least 5 examples,
 
     until (you can think of 5 examples)
