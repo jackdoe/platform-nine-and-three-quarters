@@ -180,19 +180,39 @@ our previous example, lets say the water temperature at the moment is
 Lets say we run our programs few minutes later, and at this point the water temperature is 100 degrees, then `(water temperature == 100)` is **true**.
 
 The code is absolutely the same, but somehow it works in a different way.
-A problem being simply set of instructions, this is how we change the
-**flow** of the program, to behave differently when the **state**
+A program being simply set of instructions, this is how we change the
+**flow** of it, to behave differently when the **state**
 changes, in our case the state is the temperature of the water.
 
 We can have millions of lines of code in `if (water temperature ==
 100) .... end`, but unless the water temperature reaches 100 degrees
 it is completely irrelevant and never executed.
 
-
-
 ### code block
 
 code block is just a collection of statements that are executed one after the other, nothing fancy.
+
+
+## goto
+
+`goto` is a way to go to specific point in the program, for example if
+we dont want to be running our water temperature program every few
+minutes by hand, it is very nice to tell the computer to try and check
+the temperature again if it not 100 degrees:
+
+    CHECK_WATER:
+        if (water temperature == 100)
+            remove from stove
+            pour in cup
+            put tea in
+        else
+            goto CHECK_WATER
+        end
+
+
+If you are confused by this, its ok, we will keep using it in the
+sections below, and hopefully it will be clear at some point.
+
 
 ## loops
 
