@@ -56,6 +56,9 @@ There are hundreds of books, each is trying to teach from different
 approach, but I belive this is the best way for you, so sit back,
 relax and try to not close the laptop in despair.
 
+
+While you are reading this keep playing [CodeCombat](https://CodeCombat.com), whenever you go to a point you cant pass, restart the game and keep trying.
+
 ---
 
 # foundation
@@ -139,7 +142,6 @@ saying somewhat equivalent to "end of sentence"
 Anyway dont get too scared of symbols, we will get back to them later
 
 Keep in mind that syntax is absolutely irrelevant the point is in the `condition` and `code block`
-
 
 
 ## loops
