@@ -235,7 +235,7 @@ or
 
 another example is right in the previous section:
 
-    read it again **until** you can come up with at least 5 examples,
+    read it again until you can come up with at least 5 examples,
 
     until (you can think of 5 examples)
         read the #if section
@@ -388,7 +388,97 @@ now.. to the core of all cores, the basic of all basics:
 
 if you can get past this point, you can be called a programmer
 
+
 ## functions
+
+Functions are a piece of code that you can call whenever you want, some functions take parameters, some not.
+Lets use our water boiling example:
+
+     if (water temperature == 100)
+         remove from stove
+         pour in cup
+         put tea in
+     end
+
+You can imagine that checking the water temperature is quite tricky,
+well it is easy if it is boiling :) but not so easy if it is not, so
+lets write a simple function to check the temperature:
+
+    function get_water_temperature
+       get termometer
+       put in pod
+       read the termometer value
+       return (the termometer value to whoever wants to know the temperature)
+    end
+
+the **return** part is where you should focus on, there are functions
+that do not return anything, but this is not the case here, we need
+the **output** of the function to do something with it.
+
+and now I will rewrite the example to use our nice function:
+
+     if (get_water_temperature() == 100)
+         remove from stove
+         pour in cup
+         put tea in
+     end
+
+I silently added a new notation of `function_name()` which is usually
+used when a function is `called`. Then we check if the `result of the
+function is equal to 100`.
+
+
+Some functions take parameters, for example we can make a
+`put_tea_in()` function that needs 2 parameters, a kind of tea, and
+which cup to put the tea in:
+
+    function put_tea_in(which_tea, which_cup)
+        find specific tea(which_tea)
+        unpack tea pack
+        put in cup
+    end
+
+this function does not return anything, but it `modifies the world`, this is usually the case with functions that dont return anything, otherwise they are quite _useless_.
+
+another example of function with parameters
+
+    function multiplication(a, b)
+        return a * b
+    end
+
+we call the function in the same way as `get_water_temperature()`, but
+we add the parameters inside the `()` like so: `put_tea_in(green tea,
+pink cup)`
+
+or if we want to do multiplication:
+
+    if (multiplication(5,10) == 50)
+        remove from stove
+        pour in cup
+        put_tea_in(green tea, pink cup)
+    end
+
+Well this example was silly, lets make a more useful one:
+
+    if (get_water_temperature() == multiplication(10,10)
+        remove from stove
+        pour in pink cup
+
+        put_tea_in(green tea, pink cup)
+    end
+
+or
+
+    if (multiplication(get_water_temperature(), 10) == 1000)
+        remove from stove
+        pour in pink cup
+
+        put_tea_in(green tea, pink cup)
+    end
+
+haha both are not very useful :) but I want to illustrate how we can
+chain call functions, and now that I have written this I think we can
+get a better example
 
 ## recursion
 
