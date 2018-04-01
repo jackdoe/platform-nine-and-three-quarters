@@ -40,7 +40,7 @@ or
 
 ## infinite loops
 
-    the while(or until) loop syntax is `while [condition is true]`, so we can simply do `while 1 == 1`, or `while true`
+while(or until) loop syntax is `while [condition is true]`, so we can simply do `while 1 == 1`, or `while true`
 
 ## breaking out of the loop
 
