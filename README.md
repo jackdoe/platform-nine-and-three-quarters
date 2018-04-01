@@ -73,6 +73,9 @@ variables are simply placeholders, their name is irrelevant, we only care about 
 
 in this example we used 2 variables `order_from` and `coin_result`, in coin_result we simply hold the vaule of the actual coin flip
 
+you can think of a variable as a `box` with a label, the label of the box is the **name** of the variable, the content of the box is its **value**
+
+
 ## variables with loops
 
 now this is very of cool
