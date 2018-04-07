@@ -72,7 +72,7 @@ While you are reading this keep playing [CodeCombat](https://CodeCombat.com), wh
 
 * foundation
 
-** language [ WIP ]
+* language [ WIP ]
 
 Even though we have been together for 18 years now, sometimes when we
 talk I still dont know what you mean and vice versa.
@@ -91,9 +91,9 @@ when we say it, but when we lookup the definitions it makes no sense.
 Now when i say ~heavy weather~ I am not absolutely sure that the other person will understand me,
 
 
-** if
+* if
 
-*** you already know how to do this
+** you already know how to do this
 
 #+begin_src
     If you eat your meal, you can have icecream for desert.
@@ -125,7 +125,7 @@ code:
     end
 #+end_src
 
-read it again **until** you can come up with at least 5 examples,
+read it again *until* you can come up with at least 5 examples,
 write the examples in the format:
 
 #+begin_src
@@ -190,7 +190,7 @@ Keep in mind that syntax is absolutely irrelevant the point is in the
 ~condition~ and ~code block~
 
 
-*** conditions
+** conditions
 
 Lets expand on the concept of ~condition~ and examine the following piece of code:
 
@@ -218,27 +218,26 @@ absolutely do not belive that this is how programs are made, but they
 are.
 
 The whole point of the ~condition~ is that the computer will
-**evaluate** it to check if it results in ~true~ or ~false~ for using
+*evaluate* it to check if it results in ~true~ or ~false~ for using
 our previous example, lets say the water temperature at the moment is
-~57~ degrees, so the evaluation of ~(water temperature == 100)~ is **false**.
+~57~ degrees, so the evaluation of ~(water temperature == 100)~ is *false*.
 
-Lets say we run our programs few minutes later, and at this point the water temperature is 100 degrees, then ~(water temperature == 100)~ is **true**.
+Lets say we run our programs few minutes later, and at this point the water temperature is 100 degrees, then ~(water temperature == 100)~ is *true*.
 
 The code is absolutely the same, but somehow it works in a different way.
 A program being simply set of instructions, this is how we change the
-**flow** of it, to behave differently when the **state**
+*flow* of it, to behave differently when the *state*
 changes, in our case the state is the temperature of the water.
 
-We can have millions of lines of code in ~if (water temperature ==
-100) .... end~, but unless the water temperature reaches 100 degrees
+We can have millions of lines of code in ~if (water temperature == 100) .... end~, but unless the water temperature reaches 100 degrees
 it is completely irrelevant and never executed.
 
-*** code block
+** code block
 
 code block is just a collection of statements that are executed one after the other, nothing fancy.
 
 
-** goto
+* goto
 
 ~goto~ is a way to go to specific point in the program, for example if
 we dont want to be running our water temperature program every few
@@ -260,7 +259,7 @@ If you are confused by this, its ok, we will keep using it in the
 sections below, and hopefully it will be clear at some point.
 
 
-** loops
+* loops
 
 #+begin_src
     you can not play outside, until you finish your homework
@@ -295,12 +294,12 @@ another example is right in the previous section:
     read the next section
 #+end_src
 
-** infinite loops
+* infinite loops
 
 while(or until) loop syntax is ~while [condition is true]~, so we can simply do ~while 1 == 1~, or ~while true~
 
 
-** breaking out of the loop
+* breaking out of the loop
 #+begin_src
     you can play outside after 4 o'clock
 #+end_src
@@ -315,7 +314,7 @@ so of course she will be super excited and just watch the clock all the time, so
     play outside :)
 #+end_src
 
-** variables
+* variables
 
 #+begin_src
     lets flip a coin to decide which pizza to order, heads is dominos and tails is newyorkpizza
@@ -335,9 +334,9 @@ variables are simply placeholders, their name is irrelevant, we only care about 
 
 in this example we used 2 variables ~order_from~ and ~coin_result~, in coin_result we simply hold the vaule of the actual coin flip
 
-you can think of a variable as a ~box~ with a label, the label of the box is the **name** of the variable, the content of the box is its **value**
+you can think of a variable as a ~box~ with a label, the label of the box is the *name* of the variable, the content of the box is its *value*
 
-** variables with loops
+* variables with loops
 
 now this is very of cool
 
@@ -434,7 +433,7 @@ we can also use inifinite loop and break out of it
 now.. to the core of all cores, the basic of all basics:
 
 
-** loops are just syntactic suggar for ~if~ and ~goto~
+* loops are just syntactic suggar for ~if~ and ~goto~
 
 
 #+begin_src
@@ -454,7 +453,7 @@ now.. to the core of all cores, the basic of all basics:
 
 if you can get past this point, you can be called a programmer
 
-** functions
+* functions
 
 Functions are a piece of code that you can call whenever you want, some functions take parameters, some not.
 Lets use our water boiling example:
@@ -476,9 +475,9 @@ lets write a simple function to check the temperature:
        return (the termometer value to whoever wants to know the temperature)
     end
 #+end_src
-the **return** part is where you should focus on, there are functions
+the *return* part is where you should focus on, there are functions
 that do not return anything, but this is not the case here, we need
-the **output** of the function to do something with it.
+the *output* of the function to do something with it.
 
 and now I will rewrite the example to use our nice function:
 #+begin_src
