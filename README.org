@@ -1,6 +1,16 @@
-it is not easy
----
-![well](well.jpg)
+#+TITLE:     platform nine and three quarters
+#+AUTHOR:    Borislav Nikolov
+#+EMAIL:     jack@sofialondonmoskva.com
+#+LANGUAGE:  en
+
+* intro
+#+BEGIN_HTML
+
+<h3>it is not easy</h3>
+
+<img src="well.jpg">
+
+#+END_HTML
 
 I am writing this for my wife Gergana and I am trying to make it
 useful for her, so I am perfectly fine if you (who is reading this tutorial and
@@ -16,20 +26,20 @@ a learning staircase, once you learn a concept it does not get easy right away, 
 
 The four things you have to master are:
 
-* understand the meaning of the word 'if'
-* repetition (or looping)
-* variables
-* goto
+ * understand the meaning of the word 'if'
+ * repetition (or looping)
+ * variables
+ * goto
 
 This now sounds very abstract and useless, but by the end of the
 course you will be able to write some useful programs.
 
-* fun math game for Bella
-* trip budget planner
-* tick tack toe game
-* app that keeps track of how long Bella plays on the iPad
-* dog walk calendar
-* food tracking app
+ * fun math game for Bella
+ * trip budget planner
+ * tick tack toe game
+ * app that keeps track of how long Bella plays on the iPad
+ * dog walk calendar
+ * food tracking app
 
 
 At first we will start by understanding the very basic concepts, and
@@ -59,44 +69,71 @@ relax and try to not close the laptop in despair.
 
 While you are reading this keep playing [CodeCombat](https://CodeCombat.com), whenever you go to a point you cant pass, restart the game and keep trying.
 
----
 
-# foundation
+* foundation
 
-## if
+** language [ WIP ]
 
+Even though we have been together for 18 years now, sometimes when we
+talk I still dont know what you mean and vice versa. 
+
+#+begin_src
+The weather is heavy today.
+#+end_src
+
+| weather | The state of the atmosphere at a particular place and time as regards heat, cloudiness, dryness, sunshine, wind, rain, etc. |
+| heavy   | Of great weight; difficult to lift or move.                                                                                 |
+| today   | On or in the course of this present day.                                                                                    |
+
+~heavy weather~ is something we say and most people know what we mean
+when we say it, but when we lookup the definitions it makes no sense.
+
+Now when i say ~heavy weather~ I am not absolutely sure that the other person will understand me, 
+
+  
+** if
+
+*** you already know how to do this
+
+#+begin_src
     If you eat your meal, you can have icecream for desert.
+#+end_src
 
 doesnt seem difficult, and it translates to something like
 
-
+#+begin_src
     if (Bella eats her meal)
         she can have icecream
     else
         no icecream
     end
-
+#+end_src
 
 another example:
 
+#+begin_src
     If it is not raining, we will go to the sea
+#+end_src
 
 code:
 
+#+begin_src
     if (not raining)
         go to sea
     else
         stay at home
     end
+#+end_src
 
 read it again **until** you can come up with at least 5 examples,
 write the examples in the format:
 
+#+begin_src
     sentence in english
     code
+#+end_src
 
 send me the examples to my email (jack@sofialondonmoskva.com)
-
 there is a lot of syntax involved here, so lets break it down
 
     if [something that is either true or false]
@@ -109,45 +146,53 @@ there is a lot of syntax involved here, so lets break it down
 
 there are many ways to declare a code block some examples:
 
-
+#+begin_src
     if (not raining) {
        go to sea
     } else {
        stay at home
     }
+#+end_src
 
 or
 
+#+begin_src
     if not raining:
        go to sea
     else:
        stay at home
+#+end_src
 
-And there are many more, so when you read code you have to learn to just look for the `code blocks` doesnt matter if the language you are reading has brackets or spaces or semicolons or square brackets etc.
+And there are many more, so when you read code you have to learn to
+just look for the ~code blocks~ doesnt matter if the language you are
+reading has brackets or spaces or semicolons or square brackets etc.
 
-The point I am trying to make is that it is very easy to get scared when you look at any example code because it is full of weird symbols, for example:
+The point I am trying to make is that it is very easy to get scared
+when you look at any example code because it is full of weird symbols,
+for example:
 
+#+begin_src
     if (!raining) {
        go_to_sea();
     } else {
        stay_at_home();
     }
+#+end_src
 
-whoooaa, what is going on, so many symbols, there is `! () { } ; and _` so you will have to remember what they mean.
 
-`!` means `not` literally `!raining` means `not raining`, `()` are used to
-group the if condition, and `{}` are defining the code block, `;` is
+there is ~! () { } ; and _~.
+
+~!~ means ~not~ literally ~!raining~ means ~not raining~, ~()~ are used to
+group the if condition, and ~{}~ are defining the code block, ~;~ is
 saying somewhat equivalent to "end of sentence"
 
-Anyway dont get too scared of symbols, we will get back to them later
-
-Keep in mind that syntax is absolutely irrelevant the point is in the `condition` and `code block`
-
+Keep in mind that syntax is absolutely irrelevant the point is in the
+~condition~ and ~code block~
 
 
-### conditions
+*** conditions
 
-Lets expand on the concept of `condition` and examine the following piece of code:
+Lets expand on the concept of ~condition~ and examine the following piece of code:
 
     if (water temperature == 100)
         remove from stove
@@ -155,7 +200,7 @@ Lets expand on the concept of `condition` and examine the following piece of cod
         put tea in
     end
 
-in this case the condition is `(water temperature == 100)` and if this statement is `true` then the code block will be executed
+in this case the condition is ~(water temperature == 100)~ and if this statement is ~true~ then the code block will be executed
 
     if true
        code
@@ -164,42 +209,43 @@ in this case the condition is `(water temperature == 100)` and if this statement
     end
 
 This is very important and now it seems super abstract, but I will say
-again, *all* programs can be reduced to a `if` and `goto`, goto means
-*go to specific part in the program*, so if you understand the `if`
-(called `branching`), you are half there.
+again, *all* programs can be reduced to a ~if~ and ~goto~, goto means
+*go to specific part in the program*, so if you understand the ~if~
+(called ~branching~), you are half there.
 
 You are probably annoyed by now, using such trivial examples and you
 absolutely do not belive that this is how programs are made, but they
 are.
 
-The whole point of the `condition` is that the computer will
-**evaluate** it to check if it results in `true` or `false` for using
+The whole point of the ~condition~ is that the computer will
+**evaluate** it to check if it results in ~true~ or ~false~ for using
 our previous example, lets say the water temperature at the moment is
-`57` degrees, so the evaluation of `(water temperature == 100)` is **false**.
+~57~ degrees, so the evaluation of ~(water temperature == 100)~ is **false**.
 
-Lets say we run our programs few minutes later, and at this point the water temperature is 100 degrees, then `(water temperature == 100)` is **true**.
+Lets say we run our programs few minutes later, and at this point the water temperature is 100 degrees, then ~(water temperature == 100)~ is **true**.
 
 The code is absolutely the same, but somehow it works in a different way.
 A program being simply set of instructions, this is how we change the
 **flow** of it, to behave differently when the **state**
 changes, in our case the state is the temperature of the water.
 
-We can have millions of lines of code in `if (water temperature ==
-100) .... end`, but unless the water temperature reaches 100 degrees
+We can have millions of lines of code in ~if (water temperature ==
+100) .... end~, but unless the water temperature reaches 100 degrees
 it is completely irrelevant and never executed.
 
-### code block
+*** code block
 
 code block is just a collection of statements that are executed one after the other, nothing fancy.
 
 
-## goto
+** goto
 
-`goto` is a way to go to specific point in the program, for example if
+~goto~ is a way to go to specific point in the program, for example if
 we dont want to be running our water temperature program every few
 minutes by hand, it is very nice to tell the computer to try and check
 the temperature again if it not 100 degrees:
 
+#+begin_src
     CHECK_WATER:
         if (water temperature == 100)
             remove from stove
@@ -208,51 +254,58 @@ the temperature again if it not 100 degrees:
         else
             goto CHECK_WATER
         end
-
+#+end_src
 
 If you are confused by this, its ok, we will keep using it in the
 sections below, and hopefully it will be clear at some point.
 
 
-## loops
+** loops
 
+#+begin_src   
     you can not play outside, until you finish your homework
+#+end_src
 
 same as
 
+#+begin_src
     until homework finished
         no play
     end
     let her play outside
+#+end_src
 
 or
 
+#+begin_src
     while not (homework finished)
         no play
     end
     let her play outside
-
+#+end_src
 
 another example is right in the previous section:
 
+#+begin_src
     read it again until you can come up with at least 5 examples,
 
     until (you can think of 5 examples)
         read the #if section
     end
     read the next section
+#+end_src
+
+** infinite loops
+
+while(or until) loop syntax is ~while [condition is true]~, so we can simply do ~while 1 == 1~, or ~while true~
 
 
-## infinite loops
-
-while(or until) loop syntax is `while [condition is true]`, so we can simply do `while 1 == 1`, or `while true`
-
-## breaking out of the loop
-
+** breaking out of the loop
+#+begin_src
     you can play outside after 4 o'clock
-
+#+end_src
 so of course she will be super excited and just watch the clock all the time, so this will translate to
-
+#+begin_src
     while true
         if clock == 4pm
             break out of the loop
@@ -260,14 +313,17 @@ so of course she will be super excited and just watch the clock all the time, so
     end
 
     play outside :)
+#+end_src
 
-
-## variables
-
+** variables
+   
+#+begin_src
     lets flip a coin to decide which pizza to order, heads is dominos and tails is newyorkpizza
+#+end_src
 
 variables are simply placeholders, their name is irrelevant, we only care about their value
 
+#+begin_src
     order_from = dont know yet
     coin_result = flip coin
     if (coin_result == heads)
@@ -275,20 +331,22 @@ variables are simply placeholders, their name is irrelevant, we only care about 
     else
         order_from = newyorkpizza
     end
+#+end_src
 
-in this example we used 2 variables `order_from` and `coin_result`, in coin_result we simply hold the vaule of the actual coin flip
+in this example we used 2 variables ~order_from~ and ~coin_result~, in coin_result we simply hold the vaule of the actual coin flip
 
-you can think of a variable as a `box` with a label, the label of the box is the **name** of the variable, the content of the box is its **value**
+you can think of a variable as a ~box~ with a label, the label of the box is the **name** of the variable, the content of the box is its **value**
 
-
-## variables with loops
+** variables with loops
 
 now this is very of cool
 
+#+begin_src
     with this shampoo you have to wash your hair 5 times, each time put shamoo, wait 3 minutes and rince
+#+end_src
 
 so using variables and loops we can do
-
+#+begin_src
     number_of_times = 0
     while number_of_times < 5
 
@@ -301,7 +359,7 @@ so using variables and loops we can do
     get out of the bathroom
 
 the computer executes that as follow
-
+#+begin_src
     set number_of_times to 0
     LOOP: is number_of_times < 5
     if yes
@@ -314,27 +372,30 @@ the computer executes that as follow
     end
 
     get out of the bathroom
-        
-so you can see just as it is about to continue with the program we `goto` the loop beginning and check if the condition is still valid
+#+end_src
 
+so you can see just as it is about to continue with the program we
+~goto~ the loop beginning and check if the condition is still valid
 
-in many languages there is syntactic suggar for this kind of loops, called `for` loop, and for `x = x + 1`, called incrementing a variable, to be written as `x++`
+in many languages there is syntactic suggar for this kind of loops,
+called ~for~ loop, and for ~x = x + 1~, called incrementing a
+variable, to be written as ~x++~
 
 the syntax is something like:
-
+#+begin_src
     for [initial configuration]; [while condition is true]; [do this on each iteration]
-
+#+end_src
 in our case this looks like:
-
+#+begin_src
     for number_of_items = 0; number_of_items < 5; number_of_items++
         put shampoo
         wait 3 minutes
         rince
     end
     get out of the bathroom
-
-well.. in most language each of the `for` parameters is optional :) so you can have
-
+#+end_src
+well.. in most language each of the ~for~ parameters is optional :) so you can have
+#+begin_src
     number_of_items = 0
     for ; number_of_items < 5; number_of_items++
         put shampoo
@@ -342,9 +403,9 @@ well.. in most language each of the `for` parameters is optional :) so you can h
         rince
     end
     get out of the bathroom
-
+#+end_src
 or
-
+#+begin_src
     number_of_items = 0
     for ; number_of_items < 5 ;
         put shampoo
@@ -353,11 +414,11 @@ or
         number_of_items++
     end
     get out of the bathroom
-
+#+end_src
 wait.. this looks the same as the while loop; yes, yes it does.
 
 we can also use inifinite loop and break out of it
-
+#+begin_src
     number_of_items = 0
     for ;; [same as while 1=1, or while true]
         put shampoo
@@ -369,11 +430,14 @@ we can also use inifinite loop and break out of it
         end
     end
     get out of the bathroom
-
+#+end_src
 now.. to the core of all cores, the basic of all basics:
 
-# loops are just syntactic suggar for `if` and `goto`
-    
+
+** loops are just syntactic suggar for ~if~ and ~goto~
+
+
+#+begin_src   
     number_of_items = 0
     LOOP: if (number_of_items < 5)
             put shampoo
@@ -386,99 +450,103 @@ now.. to the core of all cores, the basic of all basics:
 
     get out of the bathroom
 
+#+end_src
+   
 if you can get past this point, you can be called a programmer
 
-
-## functions
+** functions
 
 Functions are a piece of code that you can call whenever you want, some functions take parameters, some not.
 Lets use our water boiling example:
-
+#+begin_src   
      if (water temperature == 100)
          remove from stove
          pour in cup
          put tea in
      end
-
+#+end_src
 You can imagine that checking the water temperature is quite tricky,
 well it is easy if it is boiling :) but not so easy if it is not, so
 lets write a simple function to check the temperature:
-
+#+begin_src   
     function get_water_temperature
        get termometer
        put in pod
        read the termometer value
        return (the termometer value to whoever wants to know the temperature)
     end
-
+#+end_src
 the **return** part is where you should focus on, there are functions
 that do not return anything, but this is not the case here, we need
 the **output** of the function to do something with it.
 
 and now I will rewrite the example to use our nice function:
-
+#+begin_src   
      if (get_water_temperature() == 100)
          remove from stove
          pour in cup
          put tea in
      end
-
-I silently added a new notation of `function_name()` which is usually
-used when a function is `called`. Then we check if the `result of the
-function is equal to 100`.
+#+end_src
+I silently added a new notation of ~function_name()~ which is usually
+used when a function is ~called~. Then we check if the ~result of the
+function is equal to 100~.
 
 
 Some functions take parameters, for example we can make a
-`put_tea_in()` function that needs 2 parameters, a kind of tea, and
+~put_tea_in()~ function that needs 2 parameters, a kind of tea, and
 which cup to put the tea in:
-
+#+begin_src   
     function put_tea_in(which_tea, which_cup)
         find specific tea(which_tea)
         unpack tea pack
         put in cup
     end
-
-this function does not return anything, but it `modifies the world`, this is usually the case with functions that dont return anything, otherwise they are quite _useless_.
+#+end_src
+this function does not return anything, but it ~modifies the world~, this is usually the case with functions that dont return anything, otherwise they are quite _useless_.
 
 another example of function with parameters
-
+#+begin_src   
     function multiplication(a, b)
         return a * b
     end
-
-we call the function in the same way as `get_water_temperature()`, but
-we add the parameters inside the `()` like so: `put_tea_in(green tea,
-pink cup)`
+#+end_src
+we call the function in the same way as ~get_water_temperature()~, but
+we add the parameters inside the ~()~ like so: ~put_tea_in(green tea,
+pink cup)~
 
 or if we want to do multiplication:
-
+#+begin_src   
     if (multiplication(5,10) == 50)
         remove from stove
         pour in cup
         put_tea_in(green tea, pink cup)
     end
-
+#+end_src
 Well this example was silly, lets make a more useful one:
-
+#+begin_src   
     if (get_water_temperature() == multiplication(10,10)
         remove from stove
         pour in pink cup
 
         put_tea_in(green tea, pink cup)
     end
-
+#+end_src
 or
-
+#+begin_src   
     if (multiplication(get_water_temperature(), 10) == 1000)
         remove from stove
         pour in pink cup
 
         put_tea_in(green tea, pink cup)
     end
-
+#+end_src
 haha both are not very useful :) but I want to illustrate how we can
 chain call functions, and now that I have written this I think we can
 get a better example
+
+
+* work in progress
 
 ## recursion
 
