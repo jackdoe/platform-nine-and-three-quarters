@@ -1,4 +1,4 @@
-#+TITLE:     platform nine and three quarters
++TITLE:     platform nine and three quarters
 #+AUTHOR:    Borislav Nikolov
 #+EMAIL:     jack@sofialondonmoskva.com
 #+LANGUAGE:  en
@@ -194,19 +194,23 @@ Keep in mind that syntax is absolutely irrelevant the point is in the
 
 Lets expand on the concept of ~condition~ and examine the following piece of code:
 
+#+begin_src
     if (water temperature == 100)
         remove from stove
         pour in cup
         put tea in
     end
+#+end_src
 
 in this case the condition is ~(water temperature == 100)~ and if this statement is ~true~ then the code block will be executed
 
+#+begin_src
     if true
        code
     else
        code
     end
+#+end_src
 
 This is very important and now it seems super abstract, but I will say
 again, *all* programs can be reduced to a ~if~ and ~goto~, goto means
