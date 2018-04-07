@@ -75,7 +75,7 @@ While you are reading this keep playing [CodeCombat](https://CodeCombat.com), wh
 ** language [ WIP ]
 
 Even though we have been together for 18 years now, sometimes when we
-talk I still dont know what you mean and vice versa. 
+talk I still dont know what you mean and vice versa.
 
 #+begin_src
 The weather is heavy today.
@@ -88,9 +88,9 @@ The weather is heavy today.
 ~heavy weather~ is something we say and most people know what we mean
 when we say it, but when we lookup the definitions it makes no sense.
 
-Now when i say ~heavy weather~ I am not absolutely sure that the other person will understand me, 
+Now when i say ~heavy weather~ I am not absolutely sure that the other person will understand me,
 
-  
+
 ** if
 
 *** you already know how to do this
@@ -262,7 +262,7 @@ sections below, and hopefully it will be clear at some point.
 
 ** loops
 
-#+begin_src   
+#+begin_src
     you can not play outside, until you finish your homework
 #+end_src
 
@@ -316,7 +316,7 @@ so of course she will be super excited and just watch the clock all the time, so
 #+end_src
 
 ** variables
-   
+
 #+begin_src
     lets flip a coin to decide which pizza to order, heads is dominos and tails is newyorkpizza
 #+end_src
@@ -437,7 +437,7 @@ now.. to the core of all cores, the basic of all basics:
 ** loops are just syntactic suggar for ~if~ and ~goto~
 
 
-#+begin_src   
+#+begin_src
     number_of_items = 0
     LOOP: if (number_of_items < 5)
             put shampoo
@@ -451,14 +451,14 @@ now.. to the core of all cores, the basic of all basics:
     get out of the bathroom
 
 #+end_src
-   
+
 if you can get past this point, you can be called a programmer
 
 ** functions
 
 Functions are a piece of code that you can call whenever you want, some functions take parameters, some not.
 Lets use our water boiling example:
-#+begin_src   
+#+begin_src
      if (water temperature == 100)
          remove from stove
          pour in cup
@@ -468,7 +468,7 @@ Lets use our water boiling example:
 You can imagine that checking the water temperature is quite tricky,
 well it is easy if it is boiling :) but not so easy if it is not, so
 lets write a simple function to check the temperature:
-#+begin_src   
+#+begin_src
     function get_water_temperature
        get termometer
        put in pod
@@ -481,7 +481,7 @@ that do not return anything, but this is not the case here, we need
 the **output** of the function to do something with it.
 
 and now I will rewrite the example to use our nice function:
-#+begin_src   
+#+begin_src
      if (get_water_temperature() == 100)
          remove from stove
          pour in cup
@@ -496,7 +496,7 @@ function is equal to 100~.
 Some functions take parameters, for example we can make a
 ~put_tea_in()~ function that needs 2 parameters, a kind of tea, and
 which cup to put the tea in:
-#+begin_src   
+#+begin_src
     function put_tea_in(which_tea, which_cup)
         find specific tea(which_tea)
         unpack tea pack
@@ -506,7 +506,7 @@ which cup to put the tea in:
 this function does not return anything, but it ~modifies the world~, this is usually the case with functions that dont return anything, otherwise they are quite _useless_.
 
 another example of function with parameters
-#+begin_src   
+#+begin_src
     function multiplication(a, b)
         return a * b
     end
@@ -516,7 +516,7 @@ we add the parameters inside the ~()~ like so: ~put_tea_in(green tea,
 pink cup)~
 
 or if we want to do multiplication:
-#+begin_src   
+#+begin_src
     if (multiplication(5,10) == 50)
         remove from stove
         pour in cup
@@ -524,7 +524,7 @@ or if we want to do multiplication:
     end
 #+end_src
 Well this example was silly, lets make a more useful one:
-#+begin_src   
+#+begin_src
     if (get_water_temperature() == multiplication(10,10)
         remove from stove
         pour in pink cup
@@ -533,7 +533,7 @@ Well this example was silly, lets make a more useful one:
     end
 #+end_src
 or
-#+begin_src   
+#+begin_src
     if (multiplication(get_water_temperature(), 10) == 1000)
         remove from stove
         pour in pink cup
