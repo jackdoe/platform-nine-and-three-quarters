@@ -72,7 +72,7 @@ While you are reading this keep playing [CodeCombat](https://CodeCombat.com), wh
 
 * foundation
 
-* language [ WIP ]
+* language
 
 Even though we have been together for 18 years now, sometimes when we
 talk I still dont know what you mean and vice versa.
@@ -92,7 +92,39 @@ The weather is heavy today.
 ~heavy weather~ is something we say and most people know what we mean
 when we say it, but when we lookup the definitions it makes no sense.
 
-Now when i say ~heavy weather~ I am not absolutely sure that the other person will understand me,
+Now when i say ~heavy weather~ I am not absolutely sure that the other
+person will understand me, so sometimes we have to explain to each
+other what do we mean, and when we explain anything we have to use
+such words that we agree on their meaning.
+
+Lets say I invent a new word: ~ookiken~, I *define* this word to mean
+~man with mask and big sword~, now we two are the only people who know
+this word. You can see how I used other words to *define* what it means,
+and those were words that I *know* you know their meaning, otherwise
+the definition is not sufficient for you.
+
+Words have meaning and in many cases we think that words have same
+meaning for each person, like the word "red", from very early age our
+parents have told us that something is red every time we interact with
+a red object, but imagine I am colorblind, now when you say *red* I
+actually see what you would call *blue*.
+
+Word meaning is relative.
+
+As you know when I say "this food is no spicy", for me it actually is
+not spicy, then you try it and start breathing fire. So *spiciness* is
+subjective.
+
+In order to communicate with a computer however, there can be no such
+thing as "subjective" or "relative" meaning, because computers do as
+they are told. You probably have used the sentence "the computer made
+a mistake", this does not happen (except when the cosmic microwave
+background changes some values in non error-correcting code memory),
+it is a human who told it to do something that lead to the mistake.
+
+In the same time we communicate with language, so we have build tools
+to translate our thoughts into instructions that the computer
+understand (as close as we can without introducing ambiguity)
 
 
 * if
