@@ -81,9 +81,13 @@ talk I still dont know what you mean and vice versa.
 The weather is heavy today.
 #+end_src
 
-| weather | The state of the atmosphere at a particular place and time as regards heat, cloudiness, dryness, sunshine, wind, rain, etc. |
-| heavy   | Of great weight; difficult to lift or move.                                                                                 |
-| today   | On or in the course of this present day.                                                                                    |
+| weather | The state of the atmosphere at a particular |
+|         | place and time as regards heat, cloudiness, |
+|         | dryness, sunshine, wind, rain, etc.         |
+|         |                                             |
+| heavy   | Of great weight; difficult to lift or move. |
+|         |                                             |
+| today   | On or in the course of this present day.    |
 
 ~heavy weather~ is something we say and most people know what we mean
 when we say it, but when we lookup the definitions it makes no sense.
@@ -92,8 +96,6 @@ Now when i say ~heavy weather~ I am not absolutely sure that the other person wi
 
 
 * if
-
-** you already know how to do this
 
 #+begin_src
     If you eat your meal, you can have icecream for desert.
@@ -235,6 +237,7 @@ changes, in our case the state is the temperature of the water.
 
 We can have millions of lines of code in ~if (water temperature == 100) .... end~, but unless the water temperature reaches 100 degrees
 it is completely irrelevant and never executed.
+
 
 ** code block
 
@@ -468,9 +471,11 @@ Lets use our water boiling example:
          put tea in
      end
 #+end_src
+
 You can imagine that checking the water temperature is quite tricky,
 well it is easy if it is boiling :) but not so easy if it is not, so
 lets write a simple function to check the temperature:
+
 #+begin_src
     function get_water_temperature
        get termometer
