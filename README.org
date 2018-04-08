@@ -1,4 +1,4 @@
-+TITLE:     platform nine and three quarters
+#+TITLE:     platform nine and three quarters
 #+AUTHOR:    Borislav Nikolov
 #+EMAIL:     jack@sofialondonmoskva.com
 #+LANGUAGE:  en
