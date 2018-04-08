@@ -129,6 +129,13 @@ understand (as close as we can without introducing ambiguity)
 
 * if
 
+
+#+BEGIN_HTML
+
+<img src="if.jpg">
+
+#+END_HTML
+
 #+begin_src
     If you eat your meal, you can have icecream for desert.
 #+end_src
