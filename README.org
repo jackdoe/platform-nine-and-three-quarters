@@ -302,17 +302,17 @@ inside write:
 
 <script>
 
-var questions = [
+questions = [
 	[1,2],
 	[5,8],
 	[20,1]
 ]
-var operation = "+"
+operation = "+"
 
-for (var question of questions) {
-	var answer = prompt("How much is: " + question[0] + " " + operation + " " + question[1]);
+for (question of questions) {
+	answer = prompt("How much is: " + question[0] + " " + operation + " " + question[1]);
 
-	var expectedResult = 0;
+	expectedResult = 0;
 
 	if (operation == "+") {
 		expectedResult = question[0] + question[1]
@@ -384,6 +384,14 @@ I made the program more complicated than it needs to be on purpose,
 and I know you dont know all the words and symbols, I just wanted to
 let you experience this feeling of *i have no idea what is going on*,
 which is very important and happens *all* the time to every developer.
+
+*I know you are frustrated now, nothing works and you dont understand anything.
+Take a deep breath, relax, read the text word by word, ignore the
+words you dont know and try make as much sense out of it as you can*
+
+- stop
+- *make a glass of chamomile tea with honey*
+- try again
 
 * goto
 
