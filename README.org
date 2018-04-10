@@ -127,15 +127,22 @@ to translate our thoughts into instructions that the computer
 understand (as close as we can without introducing ambiguity)
 
 
+
 * if
 
+#+begin_src
+    I will take an umbrella if it is raining
+#+end_src
 
+Lets say you are in a basement and you have no idea if it i
+  
 #+BEGIN_HTML
 
 <img src="if.jpg">
 
 #+END_HTML
 
+  
 #+begin_src
     If you eat your meal, you can have icecream for desert.
 #+end_src
@@ -282,6 +289,101 @@ it is completely irrelevant and never executed.
 
 code block is just a collection of statements that are executed one after the other, nothing fancy.
 
+
+* first program
+
+It is a little bit early, but I want to you see a real program, and
+also you can show this program to Bela and she can play and learn math.
+
+Open a file, with notepad, and save it as ~example.html~
+inside write:
+
+#+begin_src
+
+<script>
+
+var questions = [
+	[1,2],
+	[5,8],
+	[20,1]
+]
+var operation = "+"
+
+for (var question of questions) {
+	var answer = prompt("How much is: " + question[0] + " " + operation + " " + question[1]);
+
+	var expectedResult = 0;
+
+	if (operation == "+") {
+		expectedResult = question[0] + question[1]
+	} else if (operation == "-") {
+		expectedResult = question[0] - question[1]
+	} else {
+		alert("Unexpected Operation: " + operation)
+	}
+
+	if (answer == expectedResult) {
+		alert("Good Job!")
+	} else {
+		alert(":( try again")
+	}
+}
+
+</script>
+
+#+end_src
+
+Then open the file with google chrome, and answer the questions
+
+#+BEGIN_HTML
+
+<img src="firstProgram.png">
+
+#+END_HTML
+
+In english the program does:
+
+#+begin_src
+
+define list of questions
+define operation
+
+for each question of the questions
+   ask Bela how much is the "operation" of the questions
+   if the operation applied to the question gives the same result as what Bela said
+      say Good Job
+   else
+      say try again
+
+#+end_src
+
+I will simplify it a bit by removing the support for multiple operations:
+
+#+begin_src
+
+define list of questions
+
+for each question of the questions
+   ask Bela how much is the sum questions
+   if the sum of question the gives the same result as what Bela said
+      say Good Job
+   else
+      say try again
+
+#+end_src
+
+I want you to experiment with the following
+
+- try to add another operation, like ~*~
+- add more questions,
+- change the text
+- simplify the program by leaving only one operation
+- most importantly try to make a new program that just asks Bela how old is she, and you say ~Good Job~ if she answers correctly
+
+I made the program more complicated than it needs to be on purpose,
+and I know you dont know all the words and symbols, I just wanted to
+let you experience this feeling of *i have no idea what is going on*,
+which is very important and happens *all* the time to every developer.
 
 * goto
 
