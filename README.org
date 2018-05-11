@@ -307,20 +307,11 @@ questions = [
 	[5,8],
 	[20,1]
 ]
-operation = "+"
 
 for (question of questions) {
-	answer = prompt("How much is: " + question[0] + " " + operation + " " + question[1]);
+	answer = prompt("How much is: " + question[0] + " + " + question[1]);
 
-	expectedResult = 0;
-
-	if (operation == "+") {
-		expectedResult = question[0] + question[1]
-	} else if (operation == "-") {
-		expectedResult = question[0] - question[1]
-	} else {
-		alert("Unexpected Operation: " + operation)
-	}
+        expectedResult = question[0] + question[1]
 
 	if (answer == expectedResult) {
 		alert("Good Job!")
@@ -346,26 +337,10 @@ In english the program does:
 #+begin_src
 
 define list of questions
-define operation
 
 for each question of the questions
-   ask Bela how much is the "operation" of the questions
-   if the operation applied to the question gives the same result as what Bela said
-      say Good Job
-   else
-      say try again
-
-#+end_src
-
-I will simplify it a bit by removing the support for multiple operations:
-
-#+begin_src
-
-define list of questions
-
-for each question of the questions
-   ask Bela how much is the sum questions
-   if the sum of question the gives the same result as what Bela said
+   ask Bela how much is the sum of the question[0] and question[1]
+   if + applied to the question gives the same result as what Bela said
       say Good Job
    else
       say try again
